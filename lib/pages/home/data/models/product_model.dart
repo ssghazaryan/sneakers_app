@@ -18,6 +18,6 @@ class ProductModel {
   final String name;
   final String price;
   final String description;
-  final List<double> sizes;
+  final List<int> sizes;
   final Color color;
 }
