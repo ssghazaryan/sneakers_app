@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sneakers_test_app/pages/home/data/home_mocks.dart';
 import 'package:sneakers_test_app/globals/colors.dart';
-import 'package:sneakers_test_app/pages/home/logic/filter_provider.dart';
+import 'package:sneakers_test_app/logic/filter_provider.dart';
 
 Size calcTextSize(String text, TextStyle style) {
   final TextPainter textPainter = TextPainter(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sneakers_test_app/pages/home/data/models/product_model.dart';
-import 'package:sneakers_test_app/pages/product/view/components/product_header_hero.dart';
+import 'package:sneakers_test_app/models/product_model.dart';
+import 'package:sneakers_test_app/pages/product_detail/view/components/product_header_hero.dart';
 
 import 'components/product_description.dart';
 

@@ -3,13 +3,13 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sneakers_test_app/pages/home/data/models/product_model.dart';
-import 'package:sneakers_test_app/pages/home/view/components/products_page_view.dart';
+import 'package:sneakers_test_app/models/product_model.dart';
+import 'package:sneakers_test_app/pages/home/view/components/products_cards_view.dart';
 
 import '../../../../animation/rotation.dart';
 import '../../../../animation/shake_animation.dart';
 import '../../../../components/bouncing_button.dart';
-import '../../../product/view/product_screen.dart';
+import '../../../product_detail/view/product_screen.dart';
 
 class HomeItem extends StatelessWidget {
   final double index;

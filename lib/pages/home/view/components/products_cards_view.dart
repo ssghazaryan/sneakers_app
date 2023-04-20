@@ -5,7 +5,7 @@ import 'package:sneakers_test_app/globals/import.dart';
 import 'package:sneakers_test_app/pages/home/data/home_mocks.dart';
 import 'package:sneakers_test_app/pages/home/view/widgets/product_item.dart';
 
-import '../../logic/filter_provider.dart';
+import '../../../../logic/filter_provider.dart';
 
 class PageViewHolder extends ChangeNotifier {
   double page;

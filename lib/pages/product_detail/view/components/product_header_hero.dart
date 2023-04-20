@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../home/data/models/product_model.dart';
+import '../../../../models/product_model.dart';
 
 class ProductHeaderHero extends StatelessWidget {
   final ProductModel item;

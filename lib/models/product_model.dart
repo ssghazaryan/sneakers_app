@@ -16,7 +16,7 @@ class ProductModel {
   final String img;
   final String brand;
   final String name;
-  final String price;
+  final int price;
   final String description;
   final List<int> sizes;
   final Color color;

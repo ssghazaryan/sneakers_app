@@ -2,8 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sneakers_test_app/globals/import.dart';
+import 'package:sneakers_test_app/logic/cart_provider.dart';
+import 'package:sneakers_test_app/models/cart_item.dart';
 
-import '../../../home/data/models/product_model.dart';
+import '../../../../models/product_model.dart';
 import '../../../home/view/components/horizontal_filter.dart';
 import '../../logic/product_detail_provider.dart';
 
@@ -220,7 +222,18 @@ class ProductDescription extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 30),
                   child: CupertinoButton(
                     color: AppColors.selectedColor,
-                    onPressed: provider.selectedIndex != null ? () {} : null,
+                    onPressed: provider.selectedIndex != null
+                        ? () {
+                            Provider.of<CartScreenProvider>(context, listen: false).addItemToCart(
+                              CartItem(
+                                id: UniqueKey().toString(),
+                                productModel: productData,
+                                size: provider.selectedIndex!,
+                              ),
+                            );
+                            provider.setSelectedIndex(null);
+                          }
+                        : null,
                     child: SizedBox(
                       width: double.infinity,
                       child: Center(
@@ -230,7 +243,8 @@ class ProductDescription extends StatelessWidget {
                       ),
                     ),
                   ),
-                )
+                ),
+                const SizedBox(height: 20)
               ],
             ),
           );

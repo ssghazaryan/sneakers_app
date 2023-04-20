@@ -2,14 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:sneakers_test_app/pages/home/logic/home_provider.dart';
+import 'package:sneakers_test_app/logic/home_provider.dart';
 import 'package:sneakers_test_app/pages/home/view/widgets/boottom_nav_bar.dart';
 import 'package:sneakers_test_app/pages/home/view/widgets/header.dart';
 
-import '../logic/filter_provider.dart';
+import '../../../logic/filter_provider.dart';
 import 'components/horizontal_filter.dart';
 import 'components/more_row_items.dart';
-import 'components/products_page_view.dart';
+import 'components/products_cards_view.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
